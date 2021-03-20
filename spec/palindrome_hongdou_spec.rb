@@ -7,18 +7,18 @@ RSpec.describe PalindromeHongdou do
   end
 
   it "returns true for palindromes" do
-    expect(self.is_palindrome?("deified")).to be_truthy
+    expect(PalindromeHongdou::is_palindrome?("deified")).to be_truthy
   end
 
   it "returns false for non-palindromes" do
-    expect(self.is_palindrome?("baseball")).to be_falsey
+    expect(PalindromeHongdou::is_palindrome?("baseball")).to be_falsey
   end
 
   it "returns true for permutated palindromes" do
-    expect(self.is_permutated_palindrome?("dfidiee")).to be_truthy
+    expect(PalindromeHongdou::is_permutated_palindrome?("dfidiee")).to be_truthy
   end
 
   it "returns false for non-permutated-palindromes" do
-    expect(self.is_permutated_palindrome?("dfidieee")).to be_falsey
+    expect(PalindromeHongdou::is_permutated_palindrome?("dfidieee")).to be_falsey
   end
 end

@@ -1,8 +1,6 @@
 # PalindromeHongdou
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/palindrome_hongdou`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A simple ruby gem to identify palindromes and permutated palindromes.
 
 ## Installation
 
@@ -27,7 +25,7 @@ This gem makes available the is_palindrome?("your_string") and is_permutated_pal
 For example:
 
 ```ruby
-    is_palindrome?("deified") #true
+PalindromeHongdou.is_palindrome?("deified") #true
 ```
 
 ## Development

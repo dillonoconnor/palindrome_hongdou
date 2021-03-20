@@ -5,11 +5,11 @@ require_relative "palindrome_hongdou/version"
 module PalindromeHongdou
   class Error < StandardError; end
   
-  def is_palindrome?(str)
+  def self.is_palindrome?(str)
     str == str.reverse    
   end
 
-  def is_permutated_palindrome?(str)
+  def self.is_permutated_palindrome?(str)
     return true if str == str.reverse
 
     char_counts = {}
