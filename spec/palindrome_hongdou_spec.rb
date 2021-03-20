@@ -21,4 +21,14 @@ RSpec.describe PalindromeHongdou do
   it "returns false for non-permutated-palindromes" do
     expect(PalindromeHongdou::is_permutated_palindrome?("dfidieee")).to be_falsey
   end
+
+  it "works with odd number palindromes" do
+    expect(PalindromeHongdou::is_palindrome?("racecar")).to be_truthy
+    expect(PalindromeHongdou::is_permutated_palindrome?("raeccar")).to be_truthy
+  end
+
+  it "works with even number palindromes" do
+    expect(PalindromeHongdou::is_palindrome?("toot")).to be_truthy
+    expect(PalindromeHongdou::is_permutated_palindrome?("ttoo")).to be_truthy
+  end
 end
